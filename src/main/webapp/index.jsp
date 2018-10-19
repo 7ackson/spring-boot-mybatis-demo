@@ -5,6 +5,14 @@
 <h2>Hello World!</h2>
 哈哈哈
     <table>
+        <tr>
+            <td>
+                总数:
+            </td>
+            <td>
+                ${requestScope.count}
+            </td>
+        </tr>
         <c:forEach items="${requestScope.list}" var="list">
             <tr>
                 <td>
