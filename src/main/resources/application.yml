@@ -1,0 +1,21 @@
+servlet:
+  context-path: /app
+
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  profiles:
+    active: test
+  http:
+    encoding:
+      charset: UTF-8
+mybatis:
+  mapper-locations: com/baizhi/dao/*Mapper.xml
+  type-aliases-package: com.baizhi.entity
+server:
+  servlet:
+    jsp:
+      init-parameters:
+        development: true
